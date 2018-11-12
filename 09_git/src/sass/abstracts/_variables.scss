@@ -1,0 +1,33 @@
+// COLOR
+$color-bg-dark: #191e23;
+$color-blue-dark: #34495e;
+$color-blue-light: #6a829b;
+
+$color-grey-light: #bdc3c7;
+$color-grey-middle: #d4d6d8;
+$color-grey-form: #7f8c8d;
+$color-grey-dark: rgb(39, 49, 58);
+
+
+$color-primary: rgb(255, 86, 39);
+$color-primary-darker: #af2a05;
+$color-primary-lighter: #af7b6d;
+
+$color-black: #000;
+$color-white: #fff;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// CONTAINER WIDTH
+$container-width: 120rem;
+
+//MARGINS
+$margin-1: 6rem;
+$margin-2: 5rem;
+
+$margin-phone: $margin-1 3rem 2rem 3rem;
+$margin-phone-b: $margin-1 4rem 3rem 4rem;
+$margin-tab-port: $margin-1 6rem 4rem 6rem;
+$margin-tab-land: $margin-2 6rem 3rem 6rem;
+$margin-desktop: $margin-2 7rem;

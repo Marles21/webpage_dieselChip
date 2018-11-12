@@ -1,0 +1,30 @@
+// NORMALIZING
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// SETTING OVERALL PROPORTIONS BASED ON FONT-SIZE
+html {
+  box-sizing: border-box;
+  font-size: 50%; /* defining 1rem, using % so not to override the user agent - using 8px = 1rem, expecting default 16px; 8/16*100% = 50% */
+
+  @include respond(tab-port){  // 1rem = 8/16 = 50%
+    font-size: 50%;
+  }
+
+  @include respond(tab-land){
+    font-size: 56.25%;            // 1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(desktop){
+    font-size: 62.5%;          // 1rem = 10px, 10/16 = 62.5%
+  }
+}
+
+body {
+  background-color: $color-bg-dark;
+}

@@ -1,0 +1,79 @@
+// FOOTER SECTION WITH COPYRIGHT AND BOTTOM NAVIGATION PART
+
+.footer {
+  background-color: $color-primary;
+  min-height: 8rem;
+  font-size: 1.6em;
+
+  &-container{
+    position: relative;
+    top: 1.7rem;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+
+    margin: 0 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+
+    @include respond(phone-b){
+      margin: 0 4rem;
+    }
+
+    @include respond(tab-port){
+      margin: 0 6rem;
+      justify-content: space-around;
+    }
+
+    @include respond(desktop){
+      margin: 0 7rem;
+      justify-content: space-between;
+    }
+
+  }
+
+// COPYRIGHT PART
+  &-info-part1 {
+    margin: 0 auto;
+
+    @include respond(tab-port){
+      margin: 0;
+
+    }
+  }
+
+// BOTTOM NAVIGATION PART
+  &-info-part2 {
+    margin: 0 auto;
+
+    @include respond(tab-port){
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  &-links {
+
+    & li{
+      list-style: none;
+      display: inline-block;
+    }
+
+    & a{
+      &:link,
+      &:visited{
+        color: $color-white;
+        text-decoration: none;
+        position: relative;
+      }
+
+      &:hover{
+        color: $color-grey-dark;
+      }
+
+      &:active{
+        top: .1rem;
+      }
+    }
+  }
+}

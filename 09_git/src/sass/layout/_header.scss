@@ -1,0 +1,95 @@
+//HEADER TAKES UP MOST OF THE INITIAL SCREEN SIZE, USING BACKROUND IMAGE
+.header {
+  height: 86vh;
+  background-image: radial-gradient(circle at 30% 60%, rgba($color-black,0), rgba($color-black, 0.6)), url(../img/header-bg-image.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+
+  @include respond(desktop){
+    height: 85vh;
+  }
+
+// CONTAINER TO RESPOND TO SCREEN SIZES
+  &-container {
+    margin: $margin-phone;
+
+    @include respond(phone-b){
+      margin:$margin-phone-b;
+    }
+
+
+    @include respond(tab-port){
+      margin: $margin-tab-port;
+    }
+
+    @include respond(tab-land){
+      margin: $margin-tab-land;
+    }
+
+    @include respond(desktop){
+      margin: $margin-desktop;
+    }
+
+    &-logo {
+      float: left;
+    }
+  }
+
+// HEADER TEXT CONTENT
+  &-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: $margin-phone;
+    text-align: center;
+    z-index: 10;
+
+
+    @include respond(phone-b){
+      margin: $margin-phone-b;
+      text-align: right;
+    }
+
+    @include respond(tab-port){
+      margin: $margin-tab-port;
+    }
+
+    @include respond(tab-land){
+      margin: $margin-tab-land;
+    }
+
+    @include respond(desktop){
+      margin: $margin-desktop;
+    }
+
+    &-part {
+      display: block;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//MAIN SITE LOGO
+.logo{
+  width: 70%;
+
+  @include respond(phone-b){
+    width: 80%;
+  }
+
+  @include respond(tab-port){
+    width: 85%;
+  }
+
+  @include respond(tab-land){
+    width: 95%;
+  }
+
+  @include respond(desktop){
+    width: 100%;
+  }
+}

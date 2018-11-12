@@ -1,0 +1,10 @@
+//CONTAINER TO HOST THE PAGE, PLACED IN THE MIDDLE
+.container{
+  margin: 0 auto;
+  max-width: $container-width;
+
+  @include respond(desktop){
+    margin: 3rem auto;
+  }
+
+}

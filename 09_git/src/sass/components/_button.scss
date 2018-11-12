@@ -1,0 +1,35 @@
+// BUTTON USED IN THE ORDER BANNER SECTION
+.btn{
+  flex: 1;
+
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-blue-dark;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    border-bottom: .3rem solid $color-blue-light;
+
+    &:hover{
+      background-color: $color-blue-light;
+    }
+    &:active{
+      color: $color-blue-dark;
+    }
+  }
+  @include respond(tab-port){
+    flex: 0;
+  }
+}
+
+@include respond(phone-b){
+  margin: 1rem $margin-1;
+}
+
+@include respond(tab-land){
+  margin: 1rem $margin-2;
+}

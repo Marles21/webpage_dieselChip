@@ -1,0 +1,11 @@
+// SETTING UP FONTS
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-blue-dark;
+}
+
+.header, .footer, .main-banner-order{
+  color: $color-white;
+}
